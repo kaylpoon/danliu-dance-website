@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="item flex" onclick="toggleMenu3()" id="drop3">
                 Gallery <img class="down" src="caret-down-svgrepo-com.svg" alt="">
                 <ul class="dropdown" id="3">
-                    <li><a class="item" href="gallery.html">Photo Gallery</a></li>
                     <li><a class="item" href="videos.html">Video Highlights</a></li>
                 </ul>
             </li>
