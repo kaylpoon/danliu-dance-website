@@ -2,27 +2,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const navHTML = `
     <nav class="navbar flex">
         <header class="flex">
-            <a id="logo" href="index.html"><img src="resources/images/DL Logo.avif" alt=""></a>
+            <a id="logo" href="index.html"><img src="DL Logo.avif" alt=""></a>
             <a href="index.html">Dan Liu Dance Art School</a>
         </header>
         <ul class="flex" id="nav">
             <li class="flex"><a class="item" href="index.html">Home</a></li>
             <li class="item flex" onclick="toggleMenu1()" id="drop1">
-                About <img class="down" src="resources/images/caret-down-svgrepo-com.svg" alt="">
+                About <img class="down" src="caret-down-svgrepo-com.svg" alt="">
                 <ul class="dropdown" id="1">
                     <li><a class="item" href="about.html">Our School</a></li>
                     <li><a class="item" href="awards.html">Awards</a></li>
                 </ul>
             </li>
             <li class="item flex" onclick="toggleMenu2()" id="drop2">
-                Classes <img class="down" src="resources/images/caret-down-svgrepo-com.svg" alt="">
+                Classes <img class="down" src="caret-down-svgrepo-com.svg" alt="">
                 <ul class="dropdown" id="2">
                     <li><a class="item" href="schedule.html">Schedule</a></li>
                     <li><a class="item" href="summer.html">Summer Camps</a></li>
                 </ul>
             </li>
             <li class="item flex" onclick="toggleMenu3()" id="drop3">
-                Gallery <img class="down" src="resources/images/caret-down-svgrepo-com.svg" alt="">
+                Gallery <img class="down" src="caret-down-svgrepo-com.svg" alt="">
                 <ul class="dropdown" id="3">
                     <li><a class="item" href="gallery.html">Photo Gallery</a></li>
                     <li><a class="item" href="videos.html">Video Highlights</a></li>
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
         </div>
         <div class="tile tile-info">
-            <img id="wechat" src="resources/images/Wechat.avif" alt="">
+            <img id="wechat" src="Wechat.avif" alt="">
         </div>
         <div class="tile tile-info">
             <h3>Follow Us</h3>
@@ -158,4 +158,5 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>&copy; 2025 Dan Liu Dance Art School. All rights reserved.</p>
   `;
   document.body.appendChild(footer);
+
 });
