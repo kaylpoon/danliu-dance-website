@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navHTML = `
     <nav class="navbar flex">
         <header class="flex">
-            <a id="logo" href="index.html"><img src="resources/images/DL Logo.avif" alt=""></a>
+            <a id="logo" href="index.html"><img src="DL Logo.avif" alt=""></a>
             <a href="index.html">Dan Liu Dance Art School</a>
         </header>
         <ul class="flex" id="nav">
@@ -73,3 +73,4 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(footer);
 });
+
