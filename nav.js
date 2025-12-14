@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <ul class="flex" id="nav">
             <li class="flex"><a class="item" href="about.html">About</a></li>
             <li class="flex"><a class="item" href="schedule.html">Classes</a></li>
-            <li class="flex"><a class="item" href="gallery.html">Gallery</a></li>
+            <li class="flex"><a class="item" href="videos.html">Gallery</a></li>
             <li class="flex"><a class="item" href="contact.html">Contact</a></li>
         </ul>
         <button id="menu">☰</button>
@@ -73,4 +73,5 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(footer);
 });
+
 
