@@ -2,31 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const navHTML = `
     <nav class="navbar flex">
         <header class="flex">
-            <a id="logo" href="index.html"><img src="DL Logo.avif" alt=""></a>
+            <a id="logo" href="index.html"><img src="resources/images/DL Logo.avif" alt=""></a>
             <a href="index.html">Dan Liu Dance Art School</a>
         </header>
         <ul class="flex" id="nav">
-            <li class="flex"><a class="item" href="index.html">Home</a></li>
-            <li class="item flex" onclick="toggleMenu1()" id="drop1">
-                About <img class="down" src="caret-down-svgrepo-com.svg" alt="">
-                <ul class="dropdown" id="1">
-                    <li><a class="item" href="about.html">Our School</a></li>
-                    <li><a class="item" href="awards.html">Awards</a></li>
-                </ul>
-            </li>
-            <li class="item flex" onclick="toggleMenu2()" id="drop2">
-                Classes <img class="down" src="caret-down-svgrepo-com.svg" alt="">
-                <ul class="dropdown" id="2">
-                    <li><a class="item" href="schedule.html">Schedule</a></li>
-                    <li><a class="item" href="summer.html">Summer Camps</a></li>
-                </ul>
-            </li>
-            <li class="item flex" onclick="toggleMenu3()" id="drop3">
-                Gallery <img class="down" src="caret-down-svgrepo-com.svg" alt="">
-                <ul class="dropdown" id="3">
-                    <li><a class="item" href="videos.html">Video Highlights</a></li>
-                </ul>
-            </li>
+            <li class="flex"><a class="item" href="about.html">About</a></li>
+            <li class="flex"><a class="item" href="schedule.html">Classes</a></li>
+            <li class="flex"><a class="item" href="gallery.html">Gallery</a></li>
             <li class="flex"><a class="item" href="contact.html">Contact</a></li>
         </ul>
         <button id="menu">☰</button>
@@ -41,73 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('menu-active');
     };
 });
-
-function toggleMenu1() {
-    if (document.body.classList.contains('menu-active')) {
-        if (document.getElementById('drop2').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop2').setAttribute('aria-expanded', "false");
-            document.getElementById('2').style.display = "none";
-        }
-        else if (document.getElementById('drop3').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop3').setAttribute('aria-expanded', "false");
-            document.getElementById('3').style.display = "none";
-        }
-        const link = document.getElementById('drop1');
-        const content = document.getElementById('1');
-        const isExpanded = link.getAttribute('aria-expanded') === "true";
-
-        link.setAttribute('aria-expanded', !isExpanded);
-        content.style.display = isExpanded ? "none" : "flex";
-        content.style.flexDirection = "column";
-    }
-}
-
-function toggleMenu2() {
-    if (document.body.classList.contains('menu-active')) {
-        if (document.getElementById('drop1').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop1').setAttribute('aria-expanded', "false");
-            document.getElementById('1').style.display = "none";
-        }
-        else if (document.getElementById('drop3').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop3').setAttribute('aria-expanded', "false");
-            document.getElementById('3').style.display = "none";
-        }
-
-        const link = document.getElementById('drop2');
-        const content = document.getElementById('2');
-        const isExpanded = link.getAttribute('aria-expanded') === "true";
-
-        link.setAttribute('aria-expanded', !isExpanded);
-        content.style.display = isExpanded ? "none" : "flex";
-        content.style.flexDirection = "column";
-    }
-}
-
-function toggleMenu3() {
-    if (document.body.classList.contains('menu-active')) {
-        if (document.getElementById('drop1').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop1').setAttribute('aria-expanded', "false");
-            document.getElementById('1').style.display = "none";
-        }
-        else if (document.getElementById('drop2').getAttribute('aria-expanded') === "true") {
-            document.getElementById('drop2').setAttribute('aria-expanded', "false");
-            document.getElementById('2').style.display = "none";
-        }
-        const link = document.getElementById('drop3');
-        const content = document.getElementById('3');
-        const isExpanded = link.getAttribute('aria-expanded') === "true";
-
-        link.setAttribute('aria-expanded', !isExpanded);
-        content.style.display = isExpanded ? "none" : "flex";
-        content.style.flexDirection = "column";
-    }
-}
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     document.querySelector('li').addEventListener('click', (e) => {
-//     e.target.focus(); // Ensure focus is applied
-// });
-// })
 
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
@@ -143,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
         </div>
         <div class="tile tile-info">
-            <img id="wechat" src="Wechat.avif" alt="">
+            <img id="wechat" src="resources/images/Wechat.avif" alt="">
         </div>
         <div class="tile tile-info">
             <h3>Follow Us</h3>
@@ -157,5 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
     <p>&copy; 2025 Dan Liu Dance Art School. All rights reserved.</p>
   `;
   document.body.appendChild(footer);
-
 });
